@@ -1,0 +1,122 @@
+html {
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+}
+
+video {
+  height: 18.75rem;
+  width: 25rem;
+}
+
+#video-grid{
+  width: 90%;
+  margin: 0 auto;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.main {
+  height: 100vh;
+  display: flex;
+}
+
+.main__left {
+  flex: 0.8;
+  display: flex;
+  flex-direction: column;
+}
+
+.main__videos {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.main__right {
+  flex: 0.2;
+}
+
+.main__controls {
+  display: flex;
+  justify-content: space-between;
+  background-color: #1c1e20;
+  color: #d2d2d2;
+  padding: 1.5rem;
+}
+
+.main__controls__block {
+  display: flex;
+}
+
+.main__controls__button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 0.63rem;
+  min-width: 5rem;
+  cursor: pointer;
+
+}
+
+.main__controls__button:hover {
+  background-color: #343434;
+  border-radius: 1rem;
+}
+
+.main__controls__button i { 
+  font-size: 1.5rem;
+}
+
+.leave_meeting {
+  color: #eb534b;
+}
+
+.main__right {
+  display: flex;
+  flex-direction: column;
+  background-color: #242324;
+  border-left: 1px solid #3d3d42;
+}
+
+.main__header {
+  color: #f5f5f5;
+  text-align: center;
+}
+
+.main__chat_window {
+  flex-grow: 1;
+  overflow-y: scroll;
+}
+
+.main__message_container {
+  padding: 2rem 1.5rem;
+  display: flex;
+}
+
+.messages{
+  color: white;
+  list-style: none;
+}
+
+.messages li {
+  padding: 0.4rem 0;
+}
+
+.main__message_container input {
+  flex-grow: 1;
+  background-color: transparent;
+  border: none;
+  color: #F5F5F5;
+  padding: 1rem;
+  border-radius: 0.2rem;
+}
+
+.leave_meeting {
+  color: #EB534B;
+}
+
+.unmute, .stop {
+  color: #CC3B33;
+}
